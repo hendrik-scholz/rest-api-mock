@@ -1,0 +1,16 @@
+meta {
+  name: books - delay 5 seconds
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/books/2000000000
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.responseTime: gte 5000
+}

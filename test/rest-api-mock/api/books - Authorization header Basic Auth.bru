@@ -1,0 +1,20 @@
+meta {
+  name: books - Authorization header Basic Auth
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/books/3792000474
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: username
+  password: P>M!=C),}To(27bQ
+}
+
+assert {
+  res.status: eq 200
+}

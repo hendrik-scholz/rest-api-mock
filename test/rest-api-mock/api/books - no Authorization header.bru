@@ -1,0 +1,15 @@
+meta {
+  name: books - no Authorization header
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/books/3792000474
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+}

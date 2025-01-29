@@ -1,0 +1,24 @@
+meta {
+  name: books - Authorization header Bearer Token
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/books/3792000474
+  body: none
+  auth: bearer
+}
+
+auth:basic {
+  username: username
+  password: P>M!=C),}To(27bQ
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+}
+
+assert {
+  res.status: eq 200
+}

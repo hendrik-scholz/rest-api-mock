@@ -1,0 +1,15 @@
+meta {
+  name: books - HTTP status code 404
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/books/1000000000
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 404
+}

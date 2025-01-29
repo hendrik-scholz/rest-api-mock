@@ -1,0 +1,15 @@
+meta {
+  name: books - default response
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/books/0000000000
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+}

@@ -1,0 +1,13 @@
+{
+    "httpStatusCode": 200,
+    "delayInMs": 0,
+    "payload": {
+        "isbn": "3792000474",
+        "title": "Der kleine Prinz",
+        "author": "Antoine de Saint-Exupéry",
+        "year": 1943,
+        "pages": 96,
+        "language": "de",
+        "publisher": "Karl Rauch Verlag"
+    }
+}
